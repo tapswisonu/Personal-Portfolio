@@ -1,14 +1,18 @@
-import { useState } from 'react'
- 
-import './App.css'
-
+import NavbarMain from "./Components/navbar/NavbarMain";
+import HeroMain from "./Components/heroSection/HeroMain";
+import HeroGradient from "./Components/heroSection/HeroGradient";
+import SubHeroMain from "./Components/subHeroSection/SubHeroMain";
+import AboutMeMain from "./Components/aboutMeSection/AboutMeMain";
 function App() {
-
   return (
-    <main>
-
+    <main className="font-body">
+      <NavbarMain />
+      <HeroMain />
+      <HeroGradient />
+      <SubHeroMain />
+      <AboutMeMain />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

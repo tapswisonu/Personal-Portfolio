@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+ 
 @import "tailwindcss";
 
-/* .josefin-sans-<uniquifier> {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+@theme {
+  /* --color-*: initial; */
+  --color-blue: "#120720",
+    --color-lightBlue: "#378FF6",
+    --color-darkBlue: "#032CFF",
+    --color-gray: "#7E99A3",
+    --color-lightGray: "#A5BFCC",
+    --color-darkGray: "#4C585B",
+    --color-white: "#FFFFFF",
+    --color-black: "#000000",
+    --color-pink: "#E019E4",
+    --color-lightPink: "#F237F6",
+    --color-darkPink: "#790A7B",
+    --color-orange: "#FFB22C",
+    --color-lightOrange: "#F3C623",
+    --color-darkOrange: "#FA812F",
+
+  --font-JosefinSans:  "Josefin Sans", "sans-serif" ;
+  --font-Roboto: '"Roboto"', "sans-serif" ;
 }
 
-.roboto-<uniquifier> {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
+
+
