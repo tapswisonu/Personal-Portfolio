@@ -14,10 +14,10 @@ const FooterMain = () => {
       name: "Experience",
       section: "experience",
     },
-    {
-      name: "Projects",
-      section: "projects",
-    },
+    // {
+    //   name: "Projects",
+    //   section: "projects",
+    // },
   ];
   return (
     <div className="px-4">
@@ -44,7 +44,7 @@ const FooterMain = () => {
         </ul>
       </div>
       <p className="max-w-[1200px] mx-auto text-right mt-2 mb-12 text-sm text-lightBrown">
-        © 2024 Abdelrahman | All Rights Reserved.
+        © 2025
       </p>
     </div>
   );
