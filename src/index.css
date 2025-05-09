@@ -1,26 +1,51 @@
- 
 @import "tailwindcss";
 
 @theme {
-  /* --color-*: initial; */
-  --color-blue: "#120720",
-    --color-lightBlue: "#378FF6",
-    --color-darkBlue: "#032CFF",
-    --color-gray: "#7E99A3",
-    --color-lightGray: "#A5BFCC",
-    --color-darkGray: "#4C585B",
-    --color-white: "#FFFFFF",
-    --color-black: "#000000",
-    --color-pink: "#E019E4",
-    --color-lightPink: "#F237F6",
-    --color-darkPink: "#790A7B",
-    --color-orange: "#FFB22C",
-    --color-lightOrange: "#F3C623",
-    --color-darkOrange: "#FA812F",
-
-  --font-JosefinSans:  "Josefin Sans", "sans-serif" ;
-  --font-Roboto: '"Roboto"', "sans-serif" ;
+  --color-bg:  #fff
+  --color-box:   #fff
+  --box-border:   #e5e7eb
+  --box-sd:   #e2e8f0
+  --heading-1:  #172554
+  --heading-2:  #1f2937
+  --heading-3:   #374151
 }
 
+.dark {
+  --color-bg: #030712
+  --color-box:  #111827
+  --box-border:  #f3f4f6
+  --box-sd:  #e2e8f0
+  --heading-1:  #fff
+  --heading-2:  #f3f4f6
+  --heading-3:   #d1d5db
+}
 
+@layer utilities {
+  .bg-body {
+    background-color: rgb(var(--color-bg));
+  }
 
+  .bg-box-bg {
+    background-color: rgb(var(--color-box));
+  }
+
+  .text-heading-1 {
+    color: rgb(var(--heading-1));
+  }
+
+  .text-heading-2 {
+    color: rgb(var(--heading-2));
+  }
+
+  .text-heading-3 {
+    color: rgb(var(--heading-3));
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}

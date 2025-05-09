@@ -36,7 +36,8 @@ const projects = [
 
 const ProjectsMain = () => {
   return (
-    <div id="projects" className="max-w-[1200px] mx-auto px-4">
+    <>
+      {/* <div id="projects" className="max-w-[1200px] mx-auto px-4">
       <motion.div
         variants={fadeIn("top", 0)}
         initial="hidden"
@@ -58,7 +59,8 @@ const ProjectsMain = () => {
           );
         })}
       </div>
-    </div>
+    </div> */}
+    </>
   );
 };
 
