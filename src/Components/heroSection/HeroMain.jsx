@@ -3,11 +3,10 @@ import HeroPic from "./HeroPic";
 
 const HeroMain = () => {
   return (
-    <div style={{ backgroundColor: "#14213d" }} className=" pt-40 pb-16">
-      <div className="max-w-[1200px] mx-auto  px-4">
-        {/* <div className="flex md:flex-row sm:flex-col  max-w-[1200px] mx-auto justify-between items-center relative px-4"> */}
+    <div className=" pt-40 pb-16">
+      <div className="flex md:flex-row sm:flex-col  max-w-[1200px] mx-auto justify-between items-center relative px-4">
         <HeroText />
-        {/* <HeroPic /> */}
+        <HeroPic />
       </div>
     </div>
   );
