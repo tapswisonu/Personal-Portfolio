@@ -23,7 +23,7 @@ function App() {
       <ExperienceMain />
       <ProjectsMain />
       <ContactMeMain />
-      {/* <HelperSection /> */}
+      <HelperSection />
       <FooterMain />
     </main>
   );
