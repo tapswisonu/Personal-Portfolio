@@ -15,7 +15,7 @@ function App() {
     <main className="font-body">
       <NavbarMain />
       <HeroMain />
-      <HeroGradient />
+     <HeroGradient />
       <SubHeroMain />
       <AboutMeMain />
       <SkillsMain />
