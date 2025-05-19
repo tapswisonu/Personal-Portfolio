@@ -1,7 +1,7 @@
 const SingleInfo = ({ text, Image }) => {
   return (
     <div className="flex gap-4 items-center justify-start">
-      <Image className="text-3xl" />
+      <Image className="text-3xl  text-white" />
       <p>{text}</p>
     </div>
   );
