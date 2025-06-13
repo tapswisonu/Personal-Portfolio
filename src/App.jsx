@@ -1,30 +1,33 @@
-import NavbarMain from "./Components/navbar/NavbarMain";
-import HeroMain from "./Components/heroSection/HeroMain";
-import HeroGradient from "./Components/heroSection/HeroGradient";
-import SubHeroMain from "./Components/subHeroSection/SubHeroMain";
-import AboutMeMain from "./Components/aboutMeSection/AboutMeMain";
-import SkillsMain from "./Components/skillsSection/SkillsMain";
-import SubSkills from "./Components/skillsSection/SubSkills";
-import ExperienceMain from "./Components/experienceSection/ExperienceMain";
-import ProjectsMain from "./Components/projectsSection/ProjectsMain";
-import ContactMeMain from "./Components/contactMeSection/ContactMeMain";
-import FooterMain from "./Components/footer/FooterMain";
-import HelperSection from "./Components/HelperSection";
+
+import Header from './Pages/Header/Header';
+import Footer from './Pages/footer/Footer'
+import HeroSection from "./Components/heroSection/HeroSection";
+import AboutMe from "./Components/AboutMe/AboutMe";
+import Projects from "./Components/Projects/Projects";
+import Skills from "./Components/Skills/Skills";
+import Experience from "./Components/Experience/Experience";
+import ContactMe from "./Components/ContactMe/ContactMe";
+
 function App() {
   return (
-    <main className="font-body">
-      <NavbarMain />
-      <HeroMain />
-      <HeroGradient />
-      <SubHeroMain />
-      <AboutMeMain />
-      <SkillsMain />
-      <SubSkills />
-      <ExperienceMain />
-      <ProjectsMain />
-      <ContactMeMain />
-      <HelperSection />
-      <FooterMain />
+    <main className="min-h-screen bg-gray-50 text-gray-800 font-sans">
+      <Header />
+      <main className="pt-20">
+        {/* Hero Section */}
+        <HeroSection />
+        {/* About Section */}
+        <AboutMe />
+        {/* Projects Section */}
+        {/* <Projects /> */}
+        {/* Skills Section */}
+        <Skills />
+        {/* Experience Section */}
+        <Experience />
+        {/* Contact Section */}
+        <ContactMe/>
+      </main>
+      ;
+      <Footer />
     </main>
   );
 }
