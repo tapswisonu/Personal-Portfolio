@@ -1,6 +1,8 @@
 import React from "react";
 import tapswiImg from './../../assets/tapswi-img.png';
 import backgroundImg from "./../../assets/background-img.jpg";
+import file from "./../../assets/Tapaswi_Resume.pdf";
+
 function HeroSection() {
   return (
     <div>
@@ -28,25 +30,17 @@ function HeroSection() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="#"
+                  href={file}
+                  type="application/pdf"
+                  download
                   className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center gap-2 !rounded-button whitespace-nowrap cursor-pointer"
                 >
                   <i className="fas fa-download"></i> Download Resume
                 </a>
-                <a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("contact");
-                  }}
-                  className="bg-white text-blue-600 border border-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-300 !rounded-button whitespace-nowrap cursor-pointer"
-                >
-                  Contact Me
-                </a>
               </div>
               <div className="flex gap-4 pt-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/tapswisonu"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
@@ -54,29 +48,15 @@ function HeroSection() {
                   <i className="fab fa-github text-2xl"></i>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/tapswi-yadav/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
                 >
                   <i className="fab fa-linkedin text-2xl"></i>
                 </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
-                >
-                  <i className="fab fa-twitter text-2xl"></i>
-                </a>
-                <a
-                  href="https://dribbble.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
-                >
-                  <i className="fab fa-dribbble text-2xl"></i>
-                </a>
+                
+                
               </div>
             </div>
             <div className="flex justify-center">
