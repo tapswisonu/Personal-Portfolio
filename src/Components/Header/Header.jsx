@@ -4,9 +4,11 @@ import { Link, useLocation } from "react-router-dom";
 function Header() {
   const location = useLocation();
   const [activePath, setActivePath] = useState(location.pathname);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setActivePath(location.pathname);
+    setMobileMenuOpen(false); // Close menu on route change
   }, [location]);
 
   const navItems = [
@@ -28,7 +30,7 @@ function Header() {
           <span className="text-xl font-bold">Tapswi Yadav</span>
         </div>
 
-        {/* Navigation */}
+        {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <Link
@@ -45,11 +47,34 @@ function Header() {
           ))}
         </nav>
 
-        {/* Mobile menu button (optional functionality) */}
-        <button className="md:hidden text-gray-600 focus:outline-none">
+        {/* Mobile Toggle Button */}
+        <button
+          className="md:hidden text-gray-600 focus:outline-none"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
           <i className="fas fa-bars text-2xl"></i>
         </button>
       </div>
+
+      {/* Mobile Nav */}
+      {mobileMenuOpen && (
+        <nav className="md:hidden bg-white shadow-md px-6 py-4 space-y-4">
+          {navItems.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`block ${
+                activePath === item.path
+                  ? "text-blue-600 font-medium"
+                  : "text-gray-600"
+              } hover:text-blue-500 transition-colors duration-300 capitalize`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+      )}
     </header>
   );
 }
