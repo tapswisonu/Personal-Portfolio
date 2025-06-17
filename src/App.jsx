@@ -3,7 +3,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 // Pages
-import Home from "./Pages/Home/Home";
 import HeroSection from "./Pages/HeroSection/HeroSection"
 import AboutMe from "./Pages/AboutMe/AboutMe";
 import Skills from "./Pages/Skills/Skills";
