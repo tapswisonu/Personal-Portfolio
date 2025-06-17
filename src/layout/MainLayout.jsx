@@ -5,12 +5,10 @@ import Footer from "./../components/Footer/Footer";
 
 const MainLayout = () => {
   return (
-
     <main className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <Header />
-      <div className="pt-20">
+      <div className="pt-20 ">
         <Outlet />
-        
       </div>
       <Footer />
     </main>
