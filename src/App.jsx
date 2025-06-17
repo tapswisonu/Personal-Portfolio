@@ -8,9 +8,11 @@ import AboutMe from "./pages/AboutMe/AboutMe";
 import Skills from "./pages/Skills/Skills";
 import Experience from "./pages/Experience/Experience";
 import ContactMe from "./pages/ContactMe/ContactMe";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
+    <BrowserRouter basename="/Personal-Portfolio">
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HeroSection />} />
@@ -19,7 +21,8 @@ function App() {
         <Route path="experience" element={<Experience />} />
         <Route path="contact" element={<ContactMe />} />
       </Route>
-    </Routes>
+      </Routes>
+      </BrowserRouter>
   );
 }
 
