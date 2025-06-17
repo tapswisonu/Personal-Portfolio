@@ -2,12 +2,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-// Pages
-import HeroSection from "./Pages/HeroSection/HeroSection"
-import AboutMe from "./Pages/AboutMe/AboutMe";
-import Skills from "./Pages/Skills/Skills";
-import Experience from "./Pages/Experience/Experience";
-import ContactMe from "./Pages/ContactMe/ContactMe";
+// pages
+import HeroSection from "./pages/HeroSection/HeroSection"
+import AboutMe from "./pages/AboutMe/AboutMe";
+import Skills from "./pages/Skills/Skills";
+import Experience from "./pages/Experience/Experience";
+import ContactMe from "./pages/ContactMe/ContactMe";
 
 function App() {
   return (
