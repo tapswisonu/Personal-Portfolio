@@ -12,17 +12,17 @@ import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter basename="/Personal-Portfolio">
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<HeroSection />} />
-        <Route path="about" element={<AboutMe />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="experience" element={<Experience />} />
-        <Route path="contact" element={<ContactMe />} />
-      </Route>
+    <BrowserRouter >
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HeroSection />} />
+          <Route path="about" element={<AboutMe />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="contact" element={<ContactMe />} />
+        </Route>
       </Routes>
-      </BrowserRouter>
+    </BrowserRouter>
   );
 }
 
