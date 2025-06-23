@@ -1,4 +1,6 @@
-export const fadeIn = (direction, delay) => {
+// src/animations/variants.js
+
+export const fadeIn = (direction = "up", delay = 0) => {
   return {
     hidden: {
       y: direction === "up" ? 40 : direction === "down" ? -40 : 0,

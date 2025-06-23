@@ -27,7 +27,7 @@ function Header() {
           <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
             TY
           </div>
-          <span className="text-xl font-bold">Tapswi Yadav</span>
+          <span className="text-xl font-bold">LoGo</span>
         </div>
 
         {/* Desktop Nav */}
