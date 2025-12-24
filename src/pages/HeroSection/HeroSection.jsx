@@ -1,6 +1,6 @@
 import React from "react";
 import tapswiImg from './../../assets/tapswi-img.png';
-import backgroundImg from "./../../assets/background-img.jpg";
+// Image removed as per request
 import file from "./../../assets/Tapaswi_Resume.pdf";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
@@ -10,14 +10,14 @@ function HeroSection() {
     <div>
       <section
         id="home"
-        className="min-h-[calc(100vh-5rem)] flex items-center relative overflow-hidden"
+        className="min-h-[calc(100vh-5rem)] flex items-center relative overflow-hidden bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
       >
         <div className="absolute inset-0 z-0">
-          <img
-            src={backgroundImg}
-            alt="Hero Background"
-            className="w-full h-full object-cover object-top"
-          />
+          {/* Abstract Background Shapes */}
+          <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-500/20 blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-purple-500/20 blur-3xl"></div>
+          {/* Grid Pattern */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
         </div>
         <div className="container mx-auto px-6 py-20 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">

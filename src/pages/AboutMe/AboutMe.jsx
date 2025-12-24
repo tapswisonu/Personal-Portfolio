@@ -24,12 +24,47 @@ function AboutMe() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <img
-              src="https://readdy.ai/api/search-image?query=Professional%20front-end%20developer%20working%20on%20multiple%20screens%20with%20code%20and%20design%20interfaces%2C%20modern%20workspace%20with%20plants%20and%20minimalist%20decor%2C%20side%20view%20of%20person%20typing%20on%20keyboard%2C%20focused%20on%20work%2C%20natural%20lighting%20from%20large%20windows&width=600&height=700&seq=3&orientation=portrait"
-              alt="About Me"
-              className="rounded-lg shadow-lg w-full h-auto object-cover"
-            />
-            <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg">
+            {/* Code Editor Mockup */}
+            <div className="bg-gray-800 rounded-lg shadow-2xl overflow-hidden border border-gray-700 transform rotate-[-2deg] hover:rotate-0 transition-transform duration-300">
+              <div className="flex items-center gap-2 px-4 py-3 bg-gray-900 border-b border-gray-700">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                <div className="ml-4 text-xs text-gray-400 font-mono">Portfolio.jsx</div>
+              </div>
+              <div className="p-6 font-mono text-sm text-gray-300 space-y-2 overflow-x-auto">
+                <div className="flex">
+                  <span className="text-purple-400 mr-2">const</span>
+                  <span className="text-blue-400">Developer</span>
+                  <span className="text-white mx-2">=</span>
+                  <span className="text-white">{`{`}</span>
+                </div>
+                <div className="pl-4">
+                  <span className="text-red-400">name:</span>
+                  <span className="text-green-400 mx-2">'Tapswi Yadav'</span>,
+                </div>
+                <div className="pl-4">
+                  <span className="text-red-400">role:</span>
+                  <span className="text-green-400 mx-2">'Front-End Dev'</span>,
+                </div>
+                <div className="pl-4">
+                  <span className="text-red-400">passion:</span>
+                  <span className="text-green-400 mx-2">'Building UI/UX'</span>,
+                </div>
+                <div className="pl-4">
+                  <span className="text-red-400">skills:</span>
+                  <span className="text-white mx-2">[</span>
+                  <span className="text-green-400">'React'</span>,
+                  <span className="text-green-400 mx-1">'Tailwind'</span>
+                  <span className="text-white">]</span>
+                </div>
+                <div>
+                  <span className="text-white">{`}`}</span>;
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
               <p className="text-2xl font-bold">1+ Years</p>
               <p>Experience</p>
             </div>
