@@ -1,163 +1,163 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 border-t border-gray-800 text-white py-12 dark:border-gray-700 transition-colors duration-300">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                 TY
               </div>
-              <span className="text-xl font-bold">Tapswi Yadav</span>
+              <span className="text-xl font-bold">LoGo</span>
             </div>
-            <p className="text-gray-400 mb-6 max-w-md">
-              Front-end developer specializing in creating responsive,
-              user-friendly web experiences with modern technologies.
+            <p className="text-gray-400 mb-6 max-w-sm">
+              Creating digital experiences that are not only functional but also
+              beautiful and intuitive.
             </p>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-colors duration-300"
               >
-                <i className="fab fa-github text-xl"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-400 hover:text-white transition-colors duration-300"
               >
-                <i className="fab fa-linkedin-in text-xl"></i>
+                <i className="fab fa-twitter"></i>
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-pink-600 hover:text-white transition-colors duration-300"
               >
-                <i className="fab fa-twitter text-xl"></i>
+                <i className="fab fa-instagram"></i>
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-700 hover:text-white transition-colors duration-300"
               >
-                <i className="fab fa-dribbble text-xl"></i>
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#home"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("home");
-                  }}
+                <Link
+                  to="hero"
+                  smooth={true}
+                  duration={500}
                   className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("about");
-                  }}
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={500}
                   className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#projects"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("projects");
-                  }}
+                <Link
+                  to="services"
+                  smooth={true}
+                  duration={500}
+                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="portfolio"
+                  smooth={true}
+                  duration={500}
                   className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#skills"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("skills");
-                  }}
-                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#experience"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("experience");
-                  }}
-                  className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
-                >
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection("contact");
-                  }}
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={500}
                   className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Contact Info</h3>
+            <h4 className="text-lg font-bold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li className="flex items-start space-x-3">
-                <i className="fas fa-map-marker-alt mt-1 text-blue-500"></i>
-                <span className="text-gray-400">Noida, UP</span>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Web Development
+                </a>
               </li>
-              <li className="flex items-start space-x-3">
-                <i className="fas fa-envelope mt-1 text-blue-500"></i>
-                <span className="text-gray-400">sytapswi@gmail.com</span>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  UI/UX Design
+                </a>
               </li>
-              <li className="flex items-start space-x-3">
-                <i className="fas fa-phone-alt mt-1 text-blue-500"></i>
-                <span className="text-gray-400">+91 7041029596</span>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Mobile Apps
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Consultation
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} LoGo. All rights reserved.
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center bg-gray-900 dark:border-gray-700">
+          <p className="text-gray-500 mb-4 md:mb-0">
+            &copy; {new Date().getFullYear()} Tapswi Yadav. All rights reserved.
           </p>
-          <button
-            onClick={scrollToTop}
-            className="mt-4 md:mt-0 bg-gray-800 hover:bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 !rounded-button whitespace-nowrap cursor-pointer"
-          >
-            <i className="fas fa-arrow-up"></i>
-          </button>
+          <div className="flex space-x-6">
+            <a
+              href="#"
+              className="text-gray-500 hover:text-white transition-colors duration-300"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 hover:text-white transition-colors duration-300"
+            >
+              Terms of Service
+            </a>
+          </div>
         </div>
       </div>
     </footer>

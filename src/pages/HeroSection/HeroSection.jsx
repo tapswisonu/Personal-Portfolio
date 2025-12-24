@@ -2,6 +2,8 @@ import React from "react";
 import tapswiImg from './../../assets/tapswi-img.png';
 import backgroundImg from "./../../assets/background-img.jpg";
 import file from "./../../assets/Tapaswi_Resume.pdf";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 function HeroSection() {
   return (
@@ -19,7 +21,12 @@ function HeroSection() {
         </div>
         <div className="container mx-auto px-6 py-20 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+            <motion.div
+              className="space-y-6"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Front-End <span className="text-blue-600">Developer</span>
               </h1>
@@ -55,18 +62,23 @@ function HeroSection() {
                 >
                   <i className="fab fa-linkedin text-2xl"></i>
                 </a>
-                
-                
+
+
               </div>
-            </div>
+            </motion.div>
             <div className="flex justify-center">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+              <motion.div
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8 }}
+              >
                 <img
                   src={tapswiImg}
                   alt="Tapswi Yadav"
                   className="w-full h-full object-cover object-top"
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
