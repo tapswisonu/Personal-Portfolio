@@ -29,6 +29,64 @@ function Experience() {
           {/* Experience Items */}
           <div className="space-y-12">
 
+            {/* Freelancing */}
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -mt-3">
+                <div className="w-8 h-8 rounded-full border-4 border-violet-500 bg-white dark:bg-gray-900"></div>
+              </div>
+              <div className="md:flex items-center">
+                <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                  <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md md:ml-auto md:mr-0 max-w-md">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                      Freelancer
+                    </h3>
+                    <p className="text-violet-600 dark:text-violet-400 font-medium">
+                      Self-Employed · Freelancing
+                    </p>
+                    <p className="text-gray-500 dark:text-gray-400 mb-4">Present</p>
+                    <ul className="text-gray-600 dark:text-gray-300 space-y-2">
+                      <li className="flex items-start md:justify-end">
+                        <span className="md:order-2">Freelance Project Work</span>
+                        <i className="fas fa-check-circle text-violet-500 mr-2 md:ml-2 md:mr-0 mt-1 md:order-1"></i>
+                      </li>
+                      <li className="flex items-start md:justify-end">
+                        <span className="md:order-2">Canva Social Media &amp; Branding Posts</span>
+                        <i className="fas fa-check-circle text-violet-500 mr-2 md:ml-2 md:mr-0 mt-1 md:order-1"></i>
+                      </li>
+                      <li className="flex items-start md:justify-end">
+                        <span className="md:order-2">Portfolio Website Development</span>
+                        <i className="fas fa-check-circle text-violet-500 mr-2 md:ml-2 md:mr-0 mt-1 md:order-1"></i>
+                      </li>
+                      <li className="flex items-start md:justify-end">
+                        <span className="md:order-2">Full-Stack Web Development Projects</span>
+                        <i className="fas fa-check-circle text-violet-500 mr-2 md:ml-2 md:mr-0 mt-1 md:order-1"></i>
+                      </li>
+                      <li className="flex items-start md:justify-end">
+                        <span className="md:order-2">Business Profile Websites &amp; Hosting Setup</span>
+                        <i className="fas fa-check-circle text-violet-500 mr-2 md:ml-2 md:mr-0 mt-1 md:order-1"></i>
+                      </li>
+                    </ul>
+                    <div className="flex flex-wrap gap-2 mt-4 md:justify-end">
+                      <span className="px-3 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-800 dark:text-violet-300 text-xs rounded-full">React</span>
+                      <span className="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-800 dark:text-pink-300 text-xs rounded-full">Canva</span>
+                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded-full">Node.js</span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs rounded-full">Hosting</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="md:w-1/2 md:pl-12">
+                  {/* Empty div for layout */}
+                </div>
+              </div>
+            </motion.div>
+
+
             {/* Experience 2 - Pioneer the Future */}
             <motion.div
               className="relative"
@@ -53,7 +111,7 @@ function Experience() {
                       Pioneer the Future Pvt. Ltd.
                     </p>
                     <p className="text-gray-500 dark:text-gray-400 mb-4">
-                      October 2023 - February 2025
+                     October 2023 - May 2025
                     </p>
                     <ul className="text-gray-600 dark:text-gray-300 space-y-2">
                       <li className="flex items-start">
@@ -106,7 +164,7 @@ function Experience() {
                     <p className="text-blue-600 dark:text-blue-400 font-medium">
                       Locksish Digitech India Private Limited
                     </p>
-                    <p className="text-gray-500 dark:text-gray-400 mb-4">March 2023 - June 2023</p>
+                    <p className="text-gray-500 dark:text-gray-400 mb-4"> March 2023 - June 2023</p>
                     <ul className="text-gray-600 dark:text-gray-300 space-y-2">
                       <li className="flex items-start md:justify-end">
                         <span className="md:order-2">

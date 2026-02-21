@@ -93,20 +93,7 @@ function Skills() {
                   ></motion.div>
                 </div>
               </li>
-              <li className="flex items-center justify-between">
-                <span className="flex items-center">
-                  <i className="fab fa-sass text-pink-500 mr-2"></i>
-                  Sass/SCSS
-                </span>
-                <div className="w-24 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                  <motion.div
-                    className="bg-blue-600 h-2.5 rounded-full"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "80%" }}
-                    transition={{ duration: 1, delay: 0.8 }}
-                  ></motion.div>
-                </div>
-              </li>
+
               <li className="flex items-center justify-between">
                 <span className="flex items-center">
                   <i className="fab fa-bootstrap text-purple-500 mr-2"></i>
@@ -146,20 +133,7 @@ function Skills() {
                 </div>
               </li>
 
-              <li className="flex items-center justify-between">
-                <span className="flex items-center">
-                  <i className="fab fa-angular text-red-500 mr-2"></i>
-                  Angular
-                </span>
-                <div className="w-24 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                  <motion.div
-                    className="bg-green-600 h-2.5 rounded-full"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "65%" }}
-                    transition={{ duration: 1, delay: 0.6 }}
-                  ></motion.div>
-                </div>
-              </li>
+
               <li className="flex items-center justify-between">
                 <span className="flex items-center">
                   <i className="fab fa-node-js text-green-600 mr-2"></i>
@@ -174,20 +148,7 @@ function Skills() {
                   ></motion.div>
                 </div>
               </li>
-              <li className="flex items-center justify-between">
-                <span className="flex items-center">
-                  <i className="fas fa-mobile-alt text-gray-600 mr-2"></i>
-                  React Native
-                </span>
-                <div className="w-24 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                  <motion.div
-                    className="bg-green-600 h-2.5 rounded-full"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "75%" }}
-                    transition={{ duration: 1, delay: 0.8 }}
-                  ></motion.div>
-                </div>
-              </li>
+
             </ul>
           </motion.div>
 
@@ -300,9 +261,61 @@ function Skills() {
 
             </ul>
           </motion.div>
+          {/* AI Tools */}
+          <motion.div variants={itemVariants} className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="flex items-center justify-center w-16 h-16 bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 rounded-lg mb-6 mx-auto">
+              <i className="fas fa-robot text-2xl"></i>
+            </div>
+            <h3 className="text-xl font-bold text-center mb-4 dark:text-white">AI Tools</h3>
+            <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+              <li className="flex items-center justify-between">
+                <span className="flex items-center">
+                  <i className="fas fa-comments text-green-500 mr-2"></i>
+                  ChatGPT
+                </span>
+                <div className="w-24 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+                  <motion.div
+                    className="bg-violet-600 h-2.5 rounded-full"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "50%" }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                  ></motion.div>
+                </div>
+              </li>
+              <li className="flex items-center justify-between">
+                <span className="flex items-center">
+                  <i className="fas fa-magic text-pink-500 mr-2"></i>
+                  Canva AI
+                </span>
+                <div className="w-24 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+                  <motion.div
+                    className="bg-violet-600 h-2.5 rounded-full"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "65%" }}
+                    transition={{ duration: 1, delay: 0.6 }}
+                  ></motion.div>
+                </div>
+              </li>
+              <li className="flex items-center justify-between">
+                <span className="flex items-center">
+                  <i className="fas fa-star text-blue-500 mr-2"></i>
+                  Gemini
+                </span>
+                <div className="w-24 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+                  <motion.div
+                    className="bg-violet-600 h-2.5 rounded-full"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "55%" }}
+                    transition={{ duration: 1, delay: 0.7 }}
+                  ></motion.div>
+                </div>
+              </li>
+            </ul>
+          </motion.div>
         </motion.div>
       </div>
     </section>
+
   );
 }
 
