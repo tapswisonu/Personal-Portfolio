@@ -1,30 +1,28 @@
-
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import MainLayout from "./layout/MainLayout";
-// pages
-import HeroSection from "./pages/HeroSection/HeroSection"
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import HeroSection from "./pages/HeroSection/HeroSection";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Skills from "./pages/Skills/Skills";
 import Experience from "./pages/Experience/Experience";
+import Projects from "./pages/Projects/Projects";
 import ContactMe from "./pages/ContactMe/ContactMe";
-import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter >
-      <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<HeroSection />} />
-          <Route path="about" element={<AboutMe />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="experience" element={<Experience />} />
-          <Route path="contact" element={<ContactMe />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <main className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans transition-colors duration-300">
+      <Header />
+      <div className="pt-20">
+        <HeroSection />
+        <AboutMe />
+        <Skills />
+        <Experience />
+        <Projects />
+        <ContactMe />
+      </div>
+      <Footer />
+    </main>
   );
 }
 
 export default App;
-

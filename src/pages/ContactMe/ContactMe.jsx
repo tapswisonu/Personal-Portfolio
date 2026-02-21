@@ -55,7 +55,7 @@ function ContactMe() {
               </div>
               <div className="ml-6">
                 <h3 className="text-lg font-bold mb-2 dark:text-white">Phone</h3>
-                <p className="text-gray-600 dark:text-gray-300">+91 8445778401</p>
+                <p className="text-gray-600 dark:text-gray-300">+91 7041029596</p>
               </div>
             </div>
 
@@ -66,26 +66,15 @@ function ContactMe() {
                   href="#"
                   className="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-600 hover:text-white transition-colors duration-300"
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/tapswi-yadav/"></a></i>
                 </a>
                 <a
                   href="#"
                   className="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-800 hover:text-white transition-colors duration-300"
                 >
-                  <i className="fab fa-github"></i>
+                  <i className="fab fa-github"><a href="https://github.com/tapswisonu"></a></i>
                 </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-blue-400 hover:text-white transition-colors duration-300"
-                >
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-pink-600 hover:text-white transition-colors duration-300"
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
+                 
               </div>
             </div>
           </motion.div>

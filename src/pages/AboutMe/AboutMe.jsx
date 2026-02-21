@@ -65,7 +65,7 @@ function AboutMe() {
             </div>
 
             <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
-              <p className="text-2xl font-bold">1+ Years</p>
+              <p className="text-2xl font-bold">2+ Years</p>
               <p>Experience</p>
             </div>
           </motion.div>

@@ -1,6 +1,6 @@
 import React from "react";
-import tapswiImg from './../../assets/tapswi-img.png';
-// Image removed as per request
+// Profile image
+
 import file from "./../../assets/Tapaswi_Resume.pdf";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
@@ -74,7 +74,7 @@ function HeroSection() {
                 transition={{ duration: 0.8 }}
               >
                 <img
-                  src={tapswiImg}
+                  src="https://ui-avatars.com/api/?name=Tapswi+Yadav&size=320&background=3b82f6&color=fff&bold=true&font-size=0.33"
                   alt="Tapswi Yadav"
                   className="w-full h-full object-cover object-top"
                 />
